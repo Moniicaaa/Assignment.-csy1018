@@ -1,0 +1,48 @@
+body{
+    background: pale rgb(220, 220, 250);
+    font-style: inherit;
+    margin:0;
+    padding:0%;
+}
+
+header { background: lavender;
+  color: rgb(185, 123, 235);
+  padding: 20px;
+  font-style:unset;
+
+
+}
+section { background: white;
+  color: darkgray;
+  padding: 20px;
+  font-style: italic;
+}
+  ul{ 
+      margin: 0;
+      padding: 0%;
+      list-style: none;
+  }
+  li{
+      margin: 0 20px 0 0; 
+      display: inline-block;
+     background-color: rgb(192, 172, 209);
+     margin: 20px;
+     padding: 3px;
+      border-radius: 4px;
+
+  }
+  a{text-decoration: none;
+  }
+  li:first-child{margin:0}
+
+  a:hover{ background-color:rgb(220, 220, 250) ;
+    }
+
+
+ footer{
+     background:darkgray;
+     color: white;
+     padding: 5px 20px;
+     font-style: inherit;
+
+ }
