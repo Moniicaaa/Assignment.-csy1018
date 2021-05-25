@@ -2,42 +2,86 @@ body{
     background: pale rgb(220, 220, 250);
     font-style: inherit;
     margin:0;
-    padding:0%;
+    padding:0;
 }
+/* Header*/
 
 header { background: lavender;
   color: rgb(185, 123, 235);
   padding: 20px;
   font-style:unset;
-
+  font-size: 30px;
+  text-align:center;
+}
+ul{ 
+  margin: 0;
+  padding: 0%;
+  list-style: none;
+}
+li{
+  margin: 0 20px 0 0; 
+  display: inline-block;
+ background-color: rgb(192, 172, 209);
+ margin: 20px;
+ padding: 5px;
+  border-radius: 4px;
 
 }
-section { background: white;
-  color: darkgray;
-  padding: 20px;
-  font-style: italic;
+a{text-decoration: none;
 }
-  ul{ 
-      margin: 0;
-      padding: 0%;
-      list-style: none;
-  }
-  li{
-      margin: 0 20px 0 0; 
-      display: inline-block;
-     background-color: rgb(192, 172, 209);
-     margin: 20px;
-     padding: 3px;
-      border-radius: 4px;
+li:first-child{margin:0}
 
-  }
-  a{text-decoration: none;
-  }
-  li:first-child{margin:0}
+a:hover{ background-color:rgb(220, 220, 250) ;
+}
 
-  a:hover{ background-color:rgb(220, 220, 250) ;
+header .mobile {
+  display: none
+}
+
+ /*Responsive*/
+
+ @media screen and (max-width:715px) {
+  
+  header .moblie {
+    display: inline-block;
+  }
+    header .dekstop{
+      display: none;
     }
+  }
 
+  /*Features*/
+
+.feature-box.one { background: white;
+  color: darkgray;
+  padding:0;
+  margin: 0;
+  width: 100%;
+  font-style: italic;
+  font-size: 25px;
+  display:flex;
+  flex-direction: row ;
+}
+
+.features figure{
+  margin: auto;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+}
+/*Responsive*/
+
+@media screen and (max-width:715px) {
+  
+  .features{
+    display: block;
+  }
+}
+  
+
+    
+      
+    /*Footer*/
 
  footer{
      background:darkgray;
