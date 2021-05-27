@@ -2,49 +2,60 @@ body{
     background: pale rgb(220, 220, 250);
     font-style: inherit;
     margin:0;
-    padding:0;
+    padding-bottom:0px;
 }
 /* Header*/
 
 header { background: lavender;
   color: rgb(185, 123, 235);
-  padding: 10px;
+  padding-bottom: 20px;
   font-style:unset;
   font-size: 30px;
   text-align:center;
 }
+header.div{
+  color: antiquewhite;
+}
+
 ul{ 
   margin: 0;
   padding: 0%;
   list-style: none;
 }
 li{
-  margin: 0 20px 0 0; 
-  display: inline-block;
- background-color: rgb(192, 172, 209);
- margin: 20px;
- padding: 5px;
-border-radius: 4px;
 
+margin: 0 20px 0 0; 
+display: inline-block;
+ background-color: rgb(195, 168, 219);
+ margin:20px;
+ padding: 5px;
+border-radius: 3px;
+box-sizing: border-box;
+transition:0.5s;
 }
+
 a{text-decoration: none;
 }
 li:first-child{margin:0}
 
-a:hover{ background-color:rgb(220, 220, 250) ;
-}
+a:hover{ 
+  box-shadow: 0 0 20px 0 rgb(234, 234, 245);}
+
 
 header .mobile {
   display: none;
-  padding: 20px
+  padding-bottom: 20px
 }
 
  /*Responsive*/
 
- @media screen and (max-width:715px) {
+ @media screen and (max-width:700px) {
   
   header .moblie {
     display: inline-block;
+  }
+  .text-box h1{
+    font-size: 20px;
   }
     header .dekstop{
       display: none;
@@ -69,10 +80,28 @@ header .mobile {
   width: 200px;
   text-align: center;
 }
-.feature-box.two.{ background-color: white;
+.feature-box.two{background-color: white;
  color:rgb(195, 142, 226);
  padding:0;
  margin:0;}
+
+.text-box h1 {
+  font-size: 40px;
+}
+.text-box{
+  width: 90%;
+  color:darkgray;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box p{
+  color:rgb(195, 142, 226);
+  font-style: oblique;
+  font-size: 20px;
+}
 
 
 /*Responsive*/
@@ -83,6 +112,34 @@ header .mobile {
     display: block;
   }
 }
+
+.Resumes{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  color: darkgray;
+
+}
+
+h1.Resumes{
+  font-size:35px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.Resumes-column{
+  flex-basis: 30%;
+  background: lavender;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px 11px;
+  box-sizing: border-box;
+}
+
+
   
 
     
