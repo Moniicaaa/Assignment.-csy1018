@@ -24,14 +24,14 @@ ul{
 }
 li{
 
-margin: 0 20px 0 0; 
-display: inline-block;
- background-color: rgb(195, 168, 219);
- margin:20px;
- padding: 5px;
-border-radius: 3px;
-box-sizing: border-box;
-transition:0.5s;
+  margin: 0 20px 0 0; 
+  display: inline-block;
+  background-color: rgb(195, 168, 219);
+  margin:20px;
+  padding: 5px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition:0.5s;
 }
 
 a{text-decoration: none;
@@ -106,20 +106,22 @@ header .mobile {
 
 /*Responsive*/
 
-@media screen and (max-width:715px) {
+@media screen and (max-width:700px) {
   
   .features{
     display: block;
   }
 }
 
+/*CV*/
+
 .Resumes{
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 175px;
   color: darkgray;
-
 }
 
 h1.Resumes{
@@ -132,24 +134,75 @@ h1.Resumes{
 }
 .Resumes-column{
   flex-basis: 30%;
-  background: lavender;
+  margin-top: 50px;
+  background:rgb(239, 231, 243);
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 20px 11px;
   box-sizing: border-box;
 }
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+}
+
+/*Contacts*/
+
+.Contacts{
+  margin:0;
+  padding:0;
+  text-align: center;
+  color:darkgray;
+}
+.Contacts h1{
+  font-style: italic ;
+  color:rgb(195, 142, 226);
+}
+.Contacts h3{
+  font-style:initial;
+  color:darkgray
+}
+form{
+  margin-top: 50px;
+  text-align: center;
+}
+.form-control{
+  width:500px;
+  background:rgb(239, 231, 243);
+  border:none;
+  border-bottom: 2px darkgray;
+  color:rgb(171, 140, 189) ;
+  font-size:15px ;
+  margin-bottom: 15px;
+  padding: 10px;
+
+}
+input{
+  height: 40px;
+}
+form .Submit{
+  background:rgb(239, 231, 243); 
+  color: rgb(211, 164, 211);
+  font-size: 20px;
+  height:40px;
+  width: 90px;
+  margin-top:20px ;
+  border-radius: 6px;
+}
+form .Submit:hover{
+  background-color: rgb(190, 128, 196);
+}
 
 
-  
 
-    
-      
-    /*Footer*/
+  /*Footer*/
 
  footer{
      background:darkgray;
      color: white;
-     padding: 5px 20px;
+     padding:20px;
+     text-align: center;
      font-style: inherit;
 
  }
