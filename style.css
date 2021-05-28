@@ -87,15 +87,16 @@ header .mobile {
 
 .text-box h1 {
   font-size: 40px;
+  text-align: center;
+
 }
 .text-box{
   width: 90%;
   color:darkgray;
-  position: absolute;
-  top: 68%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin: auto;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 225px;
 }
 .text-box p{
   color:rgb(195, 142, 226);
